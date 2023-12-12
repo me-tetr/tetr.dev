@@ -94,7 +94,7 @@ function ChannelLink({img, link, name}) {
 
 async function Subs({name}: { name: string }) {
     let subscribers;
-    if (name === '@leerob') {
+    if (name === '@tetr') {
         // subscribers = await getLeeYouTubeSubs();
     } else {
         // subscribers = await getVercelYouTubeSubs();

@@ -10,7 +10,7 @@ export default function Page() {
                     Staff Software Engineer, 2016 — 2023
                 </p>
                 <p>I joined <a href={'https://adswizz.com'}>Adswizz</a> straight out of the uni in the Research and
-                    Innovation team led by the CTO at the time. Straight away I was thrown into performing analyses over
+                    Innovation team  led by the CTO at the time. Straight away I was thrown into performing analyses over
                 </p>
                 <hr className="my-6 border-neutral-100 dark:border-neutral-800"/>
                 <h2 className="font-medium text-xl mb-1 tracking-tighter">Universitat Autonoma de Barcelona</h2>
