@@ -6,6 +6,7 @@ import {Suspense} from 'react';
 import Link from 'next/link';
 import Image from "next/image";
 import tetr_white from "../../public/ico_text-alb.svg";
+import tetr_black from "../../public/ico_text_negru.svg";
 
 const navItems = {
     '/': {
@@ -42,14 +43,28 @@ export function Navbar() {
                         </nav>
                     </LayoutGroup>
                 </div>
-                <Image
-                    alt="Me speaking on stage at React Summit about the future of Next.js"
-                    src={tetr_white}
-                    height={34}
-                    width={124}
-                    priority
-                    className="rounded-lg object-cover"
-                />
+                <div>
+                    <div className={"hidden dark:block"}>
+                        <Image
+                            alt="tetr.dev white logo"
+                            src={tetr_white}
+                            height={34}
+                            width={124}
+                            priority
+                            className="rounded-lg object-cover"
+                        />
+                    </div>
+                    <div className={"block dark:hidden"}>
+                        <Image
+                            alt="tetr.dev black logo"
+                            src={tetr_black}
+                            height={34}
+                            width={124}
+                            priority
+                            className="rounded-lg object-cover"
+                        />
+                    </div>
+                </div>
             </div>
         </aside>
     );
