@@ -266,7 +266,7 @@ export default function Page() {
                     (not to mention the content) so I decided to fork it and make it my own. I'm a big fan of open
                     source and I think it's a crucial part of the tech ecosystem.
                 </p>
-                <p>In my leisure time I enjoy hiking, trail running, cooking, and playing Elden Ring</p>
+                <p>In my leisure time I enjoy hiking, trail running, cooking, and playing Elden Ring.</p>
             </div>
             <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
                 <li>
