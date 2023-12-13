@@ -161,9 +161,11 @@ export default function Page() {
           </Badge>
         </span>
                 {`, in the  `}
+                <span className="not-prose">
                 <Badge href="https://www.adswizz.com/innovation-labs/">
                     Innovation Labs
                 </Badge>
+                      </span>
                 {` team, crafting backend systems that are blazingly fast and handle massive concurrency while delivering business value. 
                 It's all about building highly available systems and pushing the limits of digital audio tech. 
                 Constantly innovating to integrate ads seamlessly with user experience.
