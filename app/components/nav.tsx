@@ -27,22 +27,6 @@ export function Navbar() {
     return (
         <aside className="-ml-[8px] mb-16 tracking-tight">
             <div className="flex flex-row items-center justify-between mb-8">
-                <div className="lg:sticky lg:top-20">
-                    <LayoutGroup>
-                        <nav
-                            className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-                            id="nav"
-                        >
-                            <div className="flex flex-row space-x-0 pr-10">
-                                <Suspense fallback={null}>
-                                    {Object.entries(navItems).map(([path, {name}]) => {
-                                        return <NavItem key={path} path={path} name={name}/>;
-                                    })}
-                                </Suspense>
-                            </div>
-                        </nav>
-                    </LayoutGroup>
-                </div>
                 <div>
                     <div className={"hidden dark:block"}>
                         <Image
@@ -64,6 +48,22 @@ export function Navbar() {
                             className="rounded-lg object-cover"
                         />
                     </div>
+                </div>
+                <div className="lg:sticky lg:top-20">
+                    <LayoutGroup>
+                        <nav
+                            className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+                            id="nav"
+                        >
+                            <div className="flex flex-row space-x-0 pr-10">
+                                <Suspense fallback={null}>
+                                    {Object.entries(navItems).map(([path, {name}]) => {
+                                        return <NavItem key={path} path={path} name={name}/>;
+                                    })}
+                                </Suspense>
+                            </div>
+                        </nav>
+                    </LayoutGroup>
                 </div>
             </div>
         </aside>
