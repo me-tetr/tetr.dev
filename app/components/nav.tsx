@@ -27,8 +27,8 @@ export function Navbar() {
     return (
         <aside className="-ml-[8px] mb-16 tracking-tight">
             <div className="flex flex-row items-center justify-between mb-8">
-                <div>
-                    <div className={"hidden dark:block"}>
+                <div >
+                    <div className={"pt-1.5 hidden dark:block"}>
                         <Image
                             alt="tetr.dev white logo"
                             src={tetr_white}
@@ -38,7 +38,7 @@ export function Navbar() {
                             className="rounded-lg object-cover"
                         />
                     </div>
-                    <div className={"block dark:hidden"}>
+                    <div className={" pt-1.4 block dark:hidden"}>
                         <Image
                             alt="tetr.dev black logo"
                             src={tetr_black}
@@ -55,7 +55,7 @@ export function Navbar() {
                             className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
                             id="nav"
                         >
-                            <div className="flex flex-row space-x-0 pr-10">
+                            <div className="flex flex-row space-x-0 pr-0">
                                 <Suspense fallback={null}>
                                     {Object.entries(navItems).map(([path, {name}]) => {
                                         return <NavItem key={path} path={path} name={name}/>;
