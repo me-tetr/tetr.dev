@@ -18,9 +18,9 @@ const navItems = {
     '/blog': {
         name: 'blog',
     },
-    '/guestbook': {
-        name: 'guestbook',
-    },
+    // '/guestbook': {
+    //     name: 'guestbook',
+    // },
 };
 
 export function Navbar() {
